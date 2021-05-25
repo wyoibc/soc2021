@@ -6,7 +6,7 @@ date: May 24, 2021
 <br>
 <hr>
 
-1. All session contents content for SOC2021 will be posted to <u>the current GitHub website</u>. We will not be sending out any emails. Please check this website at least a day before each meeting to ensure you are up to date. Youtube links to each of the recorded sessions will be posted here as well.
+1. All session contents for SOC2021 will be posted to <u>the current GitHub website</u>. We will not be sending out any emails. Please check this website at least a day before each meeting to ensure you are up to date. Youtube links to each of the recorded sessions will be posted here as well.
 
 	- [**https://wyoibc.github.io/soc2021**](https://wyoibc.github.io/soc2021)
 	- [Raw repository for the above website](https://github.com/wyoibc/soc2021.git) (for forking purposes)
@@ -28,22 +28,23 @@ upstream. I will update the repository periodically.
 	
 	- If you use a Windows computer, install [Git for Windows](https://gitforwindows.org/)
 
-5. Download and install latest versions of R and RStudio
+5. Make sure your ``git`` installation works.
+
+	- Mac OSX: Open Terminal.app, and type ``git --version``. This should
+	  print git version to the screen. If you get an error message, copy and post it on the Slack channel.
+
+	- Git for Windows: Right click on desktop and choose ``Git Bash``,
+	  which should open up a terminal window. If you run into issues, make
+sure you followed instructions on their website (see above).
+
+
+6. Download and install latest versions of R and RStudio
 
 	- R can be downloaded from [r-project.org](https://r-project.org)
 
 	- RStudio can be obtained from [rstudio.com/products/rstudio/](https://rstudio.com/products/rstudio/)
 
 
-6. Make sure your ``git`` installation works.
-
-	- Mac OSX: Open Terminal.app, and type ``git --version``. This should
-	  print git version to the screen. If you get an error message, contact
-me (vchhatre at uwyo.edu).
-
-	- Git for Windows: Right click on desktop and choose ``Git Bash``,
-	  which should open up a terminal window. If you run into issues, make
-sure you followed instructions on their website (see above).
 
 7. [Install ``Pandoc``](https://pandoc.org/installing.html), a versatile document converter (think plain text to html or pdf).
 

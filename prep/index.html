@@ -7,10 +7,13 @@
   <meta name="dcterms.date" content="2021-05-24" />
   <title>How do I stay up to date with SOC2021?</title>
   <style>
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="avenir-white.css" />
   <!--[if lt IE 9]>
@@ -25,7 +28,7 @@
 <br>
 <hr>
 <ol type="1">
-<li><p>All session contents content for SOC2021 will be posted to <u>the current GitHub website</u>. We will not be sending out any emails. Please check this website at least a day before each meeting to ensure you are up to date. Youtube links to each of the recorded sessions will be posted here as well.</p>
+<li><p>All session contents for SOC2021 will be posted to <u>the current GitHub website</u>. We will not be sending out any emails. Please check this website at least a day before each meeting to ensure you are up to date. Youtube links to each of the recorded sessions will be posted here as well.</p>
 <ul>
 <li><a href="https://wyoibc.github.io/soc2021"><strong>https://wyoibc.github.io/soc2021</strong></a></li>
 <li><a href="https://github.com/wyoibc/soc2021.git">Raw repository for the above website</a> (for forking purposes)</li>
@@ -37,15 +40,15 @@
 <li><p>Mac OSX has a git client built into it. So no installation is necessary.</p></li>
 <li><p>If you use a Windows computer, install <a href="https://gitforwindows.org/">Git for Windows</a></p></li>
 </ul></li>
+<li><p>Make sure your <code>git</code> installation works.</p>
+<ul>
+<li><p>Mac OSX: Open Terminal.app, and type <code>git --version</code>. This should print git version to the screen. If you get an error message, copy and post it on the Slack channel.</p></li>
+<li><p>Git for Windows: Right click on desktop and choose <code>Git Bash</code>, which should open up a terminal window. If you run into issues, make sure you followed instructions on their website (see above).</p></li>
+</ul></li>
 <li><p>Download and install latest versions of R and RStudio</p>
 <ul>
 <li><p>R can be downloaded from <a href="https://r-project.org">r-project.org</a></p></li>
 <li><p>RStudio can be obtained from <a href="https://rstudio.com/products/rstudio/">rstudio.com/products/rstudio/</a></p></li>
-</ul></li>
-<li><p>Make sure your <code>git</code> installation works.</p>
-<ul>
-<li><p>Mac OSX: Open Terminal.app, and type <code>git --version</code>. This should print git version to the screen. If you get an error message, contact me (vchhatre at uwyo.edu).</p></li>
-<li><p>Git for Windows: Right click on desktop and choose <code>Git Bash</code>, which should open up a terminal window. If you run into issues, make sure you followed instructions on their website (see above).</p></li>
 </ul></li>
 <li><p><a href="https://pandoc.org/installing.html">Install <code>Pandoc</code></a>, a versatile document converter (think plain text to html or pdf).</p></li>
 <li><p>Install a text editor. We recommend <code>vim</code> (also called <code>vi</code>).</p>
