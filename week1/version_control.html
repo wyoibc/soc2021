@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2021-05-25" />
+  <title>Version control using git and github</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style>
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="avenir-white.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Version control using git and github</h1>
+<p class="date">May 25, 2021</p>
+</header>
+<h2 id="watch-week-1-session-on-youtube">Watch Week 1 Session on Youtube</h2>
+<ul>
+<li>If you don’t want to watch the software installation part, skip to 1 hr mark.</li>
+</ul>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8HbdbVxw-ks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</center>
+<p><br><br></p>
+<h2 id="what-is-version-control-and-do-i-need-it">1. What is version control and do I need it?</h2>
+<ul>
+<li><p>Ability to keep track of incremental changes made to a project is at the heart of version control. A simple example is a computer program that performs a specific function. When a developer writes the first working version of this program, it is generally labeled as v1.0. As more features and functions are developed and added to the program, its version number continues evolving gradually from 1.0 to 1.0.1 to 1.1, 1.2, 2.0 and so on and so forth. Additionally, the developer may have made many other numerous changes to the code which likely did not end up in the next released version.</p></li>
+<li><p>What if the developer discovered that one such change rendered the program dysfunctional and wanted to revert to the last functional version? That type of control on the development process is what underlies version control.</p></li>
+<li><p>Of course, a computer program is not the only project where version control is useful. It is equally useful when writing manuscripts for publication, book chapters, data analysis protocols, thesis, dissertation. Essentially any project that continues to evolve can benefit from version control. In other words, you don’t have to be a computer scientist to employ version control in your work.</p></li>
+<li><p><code>Git</code> is a program on your computer (<a href="../prep/index.html">see Prep for installation instructions</a> which performs version control functions on a project of your choice. In this session, we will work with <code>git</code> to create a new repository of code and then store it on your GitHub account.</p></li>
+</ul>
+<h2 id="create-a-new-github-repository">2. Create a new GitHub repository</h2>
+<ul>
+<li>Navigate your browser to https://github.com/YOUR_USER_NAME. In the top right hand corner, you will see a <code>+</code> button. Click on it and choose <code>New Repository</code> option. This will generate a page like the following:</li>
+</ul>
+<br>
+<center>
+<img src="images/git1.png" width=650 />
+</center>
+<p><br></p>
+<ul>
+<li>Populate this page with some information as shown below. Then click <code>Create repository</code>.</li>
+</ul>
+<br>
+<center>
+<img src="images/git2.png" width=650 />
+</center>
+<p><br></p>
+<ul>
+<li>You have just created an empty github repository. Now we will work on creating contents for this repository on our local machine.</li>
+</ul>
+<h2 id="working-locally-with-git">3. Working locally with git</h2>
+<ul>
+<li><p>Open a terminal session. Windows users will start <code>gitbash</code> by right clicking on desktop and choosing that option.</p></li>
+<li><p>Create a folder named <code>Github</code> somewhere on your computer</p></li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="bu">cd</span> /Users/your_name</span>
+<span id="cb1-3"><a href="#cb1-3"></a></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">mkdir</span> Github</span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="bu">cd</span> Github</span>
+<span id="cb1-7"><a href="#cb1-7"></a></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="bu">pwd</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="ex">/Users/your_name/Github/</span></span></code></pre></div>
+<p><br></p>
+<h3 id="initialize-new-git-repository">3.1 Initialize new git repository</h3>
+<ul>
+<li>Create your repository folder using the same name as you did on github</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="fu">mkdir</span> testgit</span>
+<span id="cb2-3"><a href="#cb2-3"></a></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="bu">cd</span> testgit/</span></code></pre></div>
+<ul>
+<li>Download and save <a href="us.csv">us.csv</a> file into <code>/Users/your_name/Github/testgit</code>. This file contains data from New York Times that details COVID-19 cases and deaths over the course of the pandemic. We will use this data set to generate some content for our repository.</li>
+</ul>
+<p><br></p>
+<ul>
+<li>Initialize the new git repository</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="bu">pwd</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="ex">/Users/your_name/Github/testgit</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="fu">git</span> init</span></code></pre></div>
+<p><br></p>
+<h3 id="generate-some-content">3.2 Generate some content</h3>
+<ul>
+<li>Create a new file called <code>README.md</code> in the repository</li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">touch</span> README.md</span></code></pre></div>
+<ul>
+<li>Open the new file in either <code>vim</code> (terminal version) or <code>macvim</code> (gui version). Windows users can open the gui version.</li>
+</ul>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="ex">vim</span> README.md</span></code></pre></div>
+<ul>
+<li><p>Note that <code>vim</code> has two modes: edit and command. To edit file, press <code>i</code> to enter the insert mode. You can revert to command mode by using <code>ESC</code> key on your keyboard.</p></li>
+<li><p>Modify the file as follows:</p></li>
+</ul>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a><span class="ex">---</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="ex">title</span>: COVID-19 Cases <span class="kw">&amp;</span> <span class="ex">Deaths</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="ex">author</span>: Your Name</span>
+<span id="cb6-4"><a href="#cb6-4"></a><span class="ex">date</span>: May 25, 2021</span>
+<span id="cb6-5"><a href="#cb6-5"></a><span class="ex">---</span></span></code></pre></div>
+<ul>
+<li>This part is called the document preamble.</li>
+</ul>
+<p><br></p>
+<h3 id="use-r-to-create-graphics">3.3 Use R to create graphics</h3>
+<ul>
+<li><p>Now go back to the terminal and fire up a R session. You may also choose to use Rstudio for the following exercise.</p></li>
+<li><p>Import the <code>us.csv</code> file into R’s memory</p></li>
+</ul>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a></span>
+<span id="cb7-2"><a href="#cb7-2"></a>df &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;us.csv&quot;</span>, <span class="dt">header=</span>T)</span>
+<span id="cb7-3"><a href="#cb7-3"></a></span>
+<span id="cb7-4"><a href="#cb7-4"></a><span class="kw">head</span>(df)</span>
+<span id="cb7-5"><a href="#cb7-5"></a></span>
+<span id="cb7-6"><a href="#cb7-6"></a>        date cases deaths</span>
+<span id="cb7-7"><a href="#cb7-7"></a><span class="dv">1</span> <span class="dv">2020-01-21</span>     <span class="dv">1</span>      <span class="dv">0</span></span>
+<span id="cb7-8"><a href="#cb7-8"></a><span class="dv">2</span> <span class="dv">2020-01-22</span>     <span class="dv">1</span>      <span class="dv">0</span></span>
+<span id="cb7-9"><a href="#cb7-9"></a><span class="dv">3</span> <span class="dv">2020-01-23</span>     <span class="dv">1</span>      <span class="dv">0</span></span>
+<span id="cb7-10"><a href="#cb7-10"></a><span class="dv">4</span> <span class="dv">2020-01-24</span>     <span class="dv">2</span>      <span class="dv">0</span></span>
+<span id="cb7-11"><a href="#cb7-11"></a><span class="dv">5</span> <span class="dv">2020-01-25</span>     <span class="dv">3</span>      <span class="dv">0</span></span>
+<span id="cb7-12"><a href="#cb7-12"></a><span class="dv">6</span> <span class="dv">2020-01-26</span>     <span class="dv">5</span>      <span class="dv">0</span></span>
+<span id="cb7-13"><a href="#cb7-13"></a></span>
+<span id="cb7-14"><a href="#cb7-14"></a></span>
+<span id="cb7-15"><a href="#cb7-15"></a><span class="kw">dim</span>(df)</span>
+<span id="cb7-16"><a href="#cb7-16"></a></span>
+<span id="cb7-17"><a href="#cb7-17"></a>[<span class="dv">1</span>] <span class="dv">489</span>   <span class="dv">3</span></span></code></pre></div>
+<ul>
+<li>This shows that the data is organized into 3 columns and 489 rows. We will now make a scatterplot of COVID-19 cases.</li>
+</ul>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a></span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="kw">plot</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">489</span>, df<span class="op">$</span>cases, <span class="dt">pch=</span><span class="dv">16</span>, <span class="dt">col=</span><span class="st">&#39;darkgreen&#39;</span>, <span class="dt">cex=</span><span class="fl">0.5</span>, <span class="dt">xlab=</span><span class="st">&quot;Days (2020 &amp; 2021)&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;Num. Cases&quot;</span>, <span class="dt">main=</span><span class="st">&quot;COVID-19 Cases in the United States&quot;</span>)</span>
+<span id="cb8-3"><a href="#cb8-3"></a></span></code></pre></div>
+<ul>
+<li><p>Notice how we created a simple vector of length 489 as an argument for <code>x</code> axis. We could have used dates, but that complicates the things a bit, so we will explore that later.</p></li>
+<li><p>This code should generate a plot like the one here:</p></li>
+</ul>
+<br>
+<center>
+<img src="images/Rplot.png" width=600 />
+</center>
+<ul>
+<li>We will now save this plot as a png formatted image in the current folder</li>
+</ul>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a></span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="kw">png</span>(<span class="st">&quot;covid_cases.png&quot;</span>, <span class="dt">width=</span><span class="dv">10</span>, <span class="dt">height=</span><span class="dv">10</span>, <span class="dt">units=</span><span class="st">&quot;inches&quot;</span>, <span class="dt">res=</span><span class="dv">600</span>)</span>
+<span id="cb9-3"><a href="#cb9-3"></a></span>
+<span id="cb9-4"><a href="#cb9-4"></a><span class="kw">plot</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">489</span>, df<span class="op">$</span>cases, <span class="dt">pch=</span><span class="dv">16</span>, <span class="dt">col=</span><span class="st">&#39;darkgreen&#39;</span>, <span class="dt">cex=</span><span class="fl">0.5</span>, <span class="dt">xlab=</span><span class="st">&quot;Days (2020 &amp; 2021)&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;Num. Cases&quot;</span>, <span class="dt">main=</span><span class="st">&quot;COVID-19 Cases in the United States&quot;</span>)</span>
+<span id="cb9-5"><a href="#cb9-5"></a></span>
+<span id="cb9-6"><a href="#cb9-6"></a><span class="kw">dev.off</span>()</span></code></pre></div>
+<ul>
+<li>If the above code worked, you should now have an image called <code>covid_cases.png</code> in your <code>testgit/</code> folder.</li>
+</ul>
+<p><br></p>
+<h3 id="finish-making-changes-to-the-repository">3.4 Finish making changes to the repository</h3>
+<ul>
+<li>Let’s go back to the <code>README.md</code> file that we were working on before and add the following items:</li>
+</ul>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1"></a></span>
+<span id="cb10-2"><a href="#cb10-2"></a><span class="ex">---</span></span>
+<span id="cb10-3"><a href="#cb10-3"></a><span class="ex">title</span>: COVID-19 Cases <span class="kw">&amp;</span> <span class="ex">Deaths</span></span>
+<span id="cb10-4"><a href="#cb10-4"></a><span class="ex">author</span>: Your Name</span>
+<span id="cb10-5"><a href="#cb10-5"></a><span class="ex">date</span>: May 25, 2021</span>
+<span id="cb10-6"><a href="#cb10-6"></a><span class="ex">---</span></span>
+<span id="cb10-7"><a href="#cb10-7"></a></span>
+<span id="cb10-8"><a href="#cb10-8"></a><span class="ex">1.</span> The following plot shows number of COVID-19 cases in the United States from January 2020 through May 2021.</span>
+<span id="cb10-9"><a href="#cb10-9"></a></span>
+<span id="cb10-10"><a href="#cb10-10"></a></span>
+<span id="cb10-11"><a href="#cb10-11"></a><span class="op">&lt;</span><span class="ex">center</span><span class="op">&gt;</span></span>
+<span id="cb10-12"><a href="#cb10-12"></a><span class="op">&lt;</span><span class="ex">img</span> src=<span class="st">&quot;covid_cases.png&quot;</span><span class="op">&gt;</span></span>
+<span id="cb10-13"><a href="#cb10-13"></a><span class="op">&lt;</span>/<span class="ex">center</span><span class="op">&gt;</span></span></code></pre></div>
+<ul>
+<li>To save and close the file, press <code>ESC</code> key, then type <code>:wq</code> and hit <code>ENTER</code>. That’s it, you have now saved <code>README.md</code></li>
+</ul>
+<p><br></p>
+<h3 id="configure-git">3.5 Configure git</h3>
+<ul>
+<li>Provide the git engine with the information on your git credentials and the new upstream repository:</li>
+</ul>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1"></a></span>
+<span id="cb11-2"><a href="#cb11-2"></a><span class="fu">git</span> config user.name <span class="st">&quot;YOUR_GITHUB_USERNAME&quot;</span></span>
+<span id="cb11-3"><a href="#cb11-3"></a></span>
+<span id="cb11-4"><a href="#cb11-4"></a><span class="fu">git</span> config user.email <span class="st">&quot;YOUR_GITHUB_ASSOCIATED_EMAIL_ADDRESS&quot;</span></span></code></pre></div>
+<ul>
+<li>Verify these settings were properly set</li>
+</ul>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1"></a></span>
+<span id="cb12-2"><a href="#cb12-2"></a><span class="fu">git</span> config --list</span>
+<span id="cb12-3"><a href="#cb12-3"></a></span>
+<span id="cb12-4"><a href="#cb12-4"></a><span class="ex">user.name</span>=wyoibc</span>
+<span id="cb12-5"><a href="#cb12-5"></a><span class="ex">user.email</span>=wyoinbre@gmail.com</span></code></pre></div>
+<ul>
+<li><p>The above output should reflect your own information.</p></li>
+<li><p>Set up upstream information about the repository</p></li>
+</ul>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1"></a></span>
+<span id="cb13-2"><a href="#cb13-2"></a><span class="fu">git</span> remote add origin https://github.com/YOUR_GITHUB_USERNAME/testgit.git</span></code></pre></div>
+<ul>
+<li>Again, verify</li>
+</ul>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1"></a></span>
+<span id="cb14-2"><a href="#cb14-2"></a><span class="fu">git</span> remote -v</span>
+<span id="cb14-3"><a href="#cb14-3"></a></span>
+<span id="cb14-4"><a href="#cb14-4"></a><span class="ex">origin</span>  https://github.com/wyoibc/testgit.git (fetch)</span>
+<span id="cb14-5"><a href="#cb14-5"></a><span class="ex">origin</span>  https://github.com/wyoibc/testgit.git (push)</span></code></pre></div>
+<p><br></p>
+<h3 id="add-and-commit-repository-content">3.6 Add and commit repository content</h3>
+<ul>
+<li>Before git starts keeping track of your file, you will need to add them to it’s memory</li>
+</ul>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1"></a></span>
+<span id="cb15-2"><a href="#cb15-2"></a><span class="fu">git</span> add .</span></code></pre></div>
+<ul>
+<li><p>Notice the <code>.</code> (period) above. That means add everything in the current location (<code>..testgit/</code></p></li>
+<li><p>Check git status</p></li>
+</ul>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1"></a></span>
+<span id="cb16-2"><a href="#cb16-2"></a><span class="fu">git</span> status</span>
+<span id="cb16-3"><a href="#cb16-3"></a></span>
+<span id="cb16-4"><a href="#cb16-4"></a><span class="ex">On</span> branch master</span>
+<span id="cb16-5"><a href="#cb16-5"></a></span>
+<span id="cb16-6"><a href="#cb16-6"></a><span class="ex">No</span> commits yet</span>
+<span id="cb16-7"><a href="#cb16-7"></a></span>
+<span id="cb16-8"><a href="#cb16-8"></a><span class="ex">Changes</span> to be committed:</span>
+<span id="cb16-9"><a href="#cb16-9"></a>  <span class="kw">(</span><span class="ex">use</span> <span class="st">&quot;git rm --cached &lt;file&gt;...&quot;</span> to unstage<span class="kw">)</span></span>
+<span id="cb16-10"><a href="#cb16-10"></a>    <span class="ex">new</span> file:   README.md</span>
+<span id="cb16-11"><a href="#cb16-11"></a>    <span class="ex">new</span> file:   covid_cases.png</span>
+<span id="cb16-12"><a href="#cb16-12"></a>    <span class="ex">new</span> file:   us.csv</span></code></pre></div>
+<ul>
+<li>Now commit the files for pushing upstream</li>
+</ul>
+<div class="sourceCode" id="cb17"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1"></a></span>
+<span id="cb17-2"><a href="#cb17-2"></a><span class="fu">git</span> commit -m <span class="st">&quot;Add a helpful message here, e.g. initial commit&quot;</span></span>
+<span id="cb17-3"><a href="#cb17-3"></a></span>
+<span id="cb17-4"><a href="#cb17-4"></a>[<span class="ex">master</span> (root-commit) <span class="ex">962e188</span>] initial commit</span>
+<span id="cb17-5"><a href="#cb17-5"></a> <span class="ex">3</span> files changed, 504 insertions(+)</span>
+<span id="cb17-6"><a href="#cb17-6"></a> <span class="ex">create</span> mode 100644 README.md</span>
+<span id="cb17-7"><a href="#cb17-7"></a> <span class="ex">create</span> mode 100644 covid_cases.png</span>
+<span id="cb17-8"><a href="#cb17-8"></a> <span class="ex">create</span> mode 100644 us.csv</span></code></pre></div>
+<p><br></p>
+<h3 id="push-the-repository-to-github">3.7 Push the repository to GitHub</h3>
+<ul>
+<li><p>Finally, push all the files to your upstream repository</p></li>
+<li><p>When you enter the following command, you will be prompted for your github username and password. When you type the password, the cursor won’t move. This is OK!</p></li>
+</ul>
+<div class="sourceCode" id="cb18"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1"></a></span>
+<span id="cb18-2"><a href="#cb18-2"></a><span class="fu">git</span> push -u origin master</span>
+<span id="cb18-3"><a href="#cb18-3"></a></span>
+<span id="cb18-4"><a href="#cb18-4"></a><span class="ex">Enumerating</span> objects: 5, done.</span>
+<span id="cb18-5"><a href="#cb18-5"></a><span class="ex">Counting</span> objects: 100% (5/5), <span class="kw">done</span><span class="ex">.</span></span>
+<span id="cb18-6"><a href="#cb18-6"></a><span class="ex">Delta</span> compression using up to 6 threads</span>
+<span id="cb18-7"><a href="#cb18-7"></a><span class="ex">Compressing</span> objects: 100% (5/5), <span class="kw">done</span><span class="ex">.</span></span>
+<span id="cb18-8"><a href="#cb18-8"></a><span class="ex">Writing</span> objects: 100% (5/5), <span class="ex">357.31</span> KiB <span class="kw">|</span> <span class="ex">9.66</span> MiB/s, done.</span>
+<span id="cb18-9"><a href="#cb18-9"></a><span class="ex">Total</span> 5 (delta 0), <span class="ex">reused</span> 0 (delta 0)</span>
+<span id="cb18-10"><a href="#cb18-10"></a><span class="ex">To</span> github.com:wyoibc/testgit.git</span>
+<span id="cb18-11"><a href="#cb18-11"></a> <span class="ex">*</span> [new branch]      master -<span class="op">&gt;</span> master</span>
+<span id="cb18-12"><a href="#cb18-12"></a><span class="ex">Branch</span> <span class="st">&#39;master&#39;</span> set up to track remote branch <span class="st">&#39;master&#39;</span> from <span class="st">&#39;origin&#39;</span>.</span></code></pre></div>
+<ul>
+<li>If you see an output similar to the above, your repository is now live on Github. Go check it out. If you get an error message, talk to us on the Slack channel.</li>
+</ul>
+</body>
+</html>

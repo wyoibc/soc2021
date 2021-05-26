@@ -7,4 +7,4 @@ title: Welcome to Summer of Code 2021
 
 - [Preparation](prep/index.html)
 
-- 1. May 25: Using Version Control in Your Work (coming soon)
+- [1. May 25: Using Version Control](week1/version_control.html)
