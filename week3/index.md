@@ -2,6 +2,14 @@
 title: A Brief Intro to Tidyverse
 ---
 
+
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9e4Tz908BoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+<br><br>
+
 **Note**: Before you begin, make sure to ``git pull`` this repository to bring your local repo up to date with the online one.
 
 <br><br>
@@ -84,11 +92,10 @@ title: A Brief Intro to Tidyverse
 
 ## 2. Data Sets
 
-- Example data sets included with packages tend to be generally not from biology. For today's exercises, we will be using many of the following data sets instead. All data sets are now part of this repository, which you can access by doing ``git pull``.
+- We will be working with the following data set for today's exercise:
 
-	- NYT COVID-19 Datasets
+	- [NYT COVID-19 Dataset](https://github.com/nytimes/covid-19-data)
 
-	- 
 
 <br><br><br>
 
