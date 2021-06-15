@@ -12,3 +12,5 @@ title: Welcome to Summer of Code 2021
 - [June 1: SSH & GitHub Collaboration](week2/git_collab.html)
 
 - [June 8: A Brief Introduction to Tidyverse](week3/tidyverse.html)
+
+- [June 15: Tidyverse Part 2 & Markdown Publishing](week4/index.html)
