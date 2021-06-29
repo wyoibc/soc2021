@@ -16,3 +16,5 @@ title: Welcome to Summer of Code 2021
 - [June 15: Tidyverse Part 2 & Markdown Publishing](week4/index.html)
 
 - [June 22: Your First R Package](week5/rpack.html)
+
+- [June 29: Contributing on GitHub with Branches and Forks](week6/branch-fork.html)
