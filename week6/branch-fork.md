@@ -2,6 +2,19 @@
 title: Branching & Forking on Github
 ---
 
+### Video recording for this session
+
+<br>
+<center>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XX6HF6AH5DA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+</center>
+<br><br>
+
+
 ## Table of contents
 
 - [Preparation](#prep)

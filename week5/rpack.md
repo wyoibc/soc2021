@@ -3,6 +3,14 @@ title: Creating your first R package
 ---
 
 
+### Video recording for this session
+
+<br>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2ywBJCLc4Kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+<br><br>
+
 ## Table of Contents
 
 - [1. Anatomy of a R Package](#anatomy-of-a-r-package)
