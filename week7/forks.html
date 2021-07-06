@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Contribute with Forks on Github</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style>
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="avenir-white.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Contribute with Forks on Github</h1>
+</header>
+<h3 id="video-recording-for-this-session">Video recording for this session</h3>
+<br>
+<center>
+</center>
+<p><br><br></p>
+<h2 id="table-of-contents">Table of contents</h2>
+<ul>
+<li><p><a href="#introduction">Introduction</a></p></li>
+<li><p><a href="#forking-vs-cloning">1. Forking vs Cloning</a></p></li>
+<li><p><a href="#contributing-as-a-non-collaborator">2. Contributing as a non-collaborator</a></p>
+<ul>
+<li><p><a href="#penguin-creates-a-new-repo">2.1 <code>penguin</code> creates a new repo</a></p></li>
+<li><p><a href="#penguin-generates-initial-content">2.2 <code>penguin</code> generates initial content</a></p></li>
+<li><p><a href="#penguin-pushes-the-packages-to-github">2.3 <code>penguin</code> pushes the package to github</a></p></li>
+<li><p><a href="#puffin-installs-the-packages">2.4 <code>puffin</code> installs the package</a></p></li>
+<li><p><a href="#puffin-forks-the-package-repository">2.5 <code>puffin</code> forks the package repository</a></p></li>
+<li><p><a href="#puffin-sets-up-repo-for-contribution">2.6 <code>puffin</code> sets up repo for contribution</a></p></li>
+<li><p><a href="#puffin-adds-more-functionality-to-the-package">2.7 <code>puffin</code> adds more functionality to the package</a></p></li>
+<li><p><a href="#puffin-pushes-updates-to-the-fork">2.8 <code>puffin</code> pushes updates to the fork</a></p></li>
+<li><p><a href="#puffin-creates-a-pull-request">2.9 <code>puffin</code> creates a pull request</a></p></li>
+<li><p><a href="#penguin-examines-and-resolves-the-pull-request">2.10 <code>penguin</code> examines and resolves the pull request</a></p></li>
+</ul></li>
+</ul>
+<p><br><br></p>
+<h2 id="introduction">Introduction</h2>
+<p>Last week we looked at better ways of contributing to a repository on GitHub when you are a collaborator. This may not always be the case. Often times, development of open source software is brought about by contributions from active users who are not official collaborators on a project.</p>
+<p>Take any popular R package on GitHub and look at how many people contributed code towards continuing development of that project. Chances are that many of them are not official collaborators. This week, we will learn how to contribute on github in such circumstances using forks.</p>
+<p><Br><br><br><br> <Br><br><br><br> <Br><br><br><br> <Br><br><br><br> <Br><br><br><br> <Br><br><br><br> <Br><br><br><br> <Br><br><br><br> <Br><br><br><br> <Br><br><br><br> <Br><br><br><br> <Br><br><br><br> <Br><br><br><br> <Br><br><br><br> <Br><br><br><br> <Br><br><br><br> <Br><br><br><br> <Br><br><br><br></p>
+<h2 id="forking-vs-cloning">1. Forking vs Cloning</h2>
+<ul>
+<li>What is forking anyway? Let’s visit Github page for one of the tidyverse packages: <code>purrr</code>.</li>
+</ul>
+<br>
+<center>
+<img src="purrr_fork.png" width=400 />
+</center>
+<p><br></p>
+<ul>
+<li><p>Take a look at the top right corner on the package page. You will see something like above. This indicates how many people are watching the repo for updates (watch + star) and how many have forked the repository for further development.</p></li>
+<li><p>Assuming you are currently logged into your account on github, click on the <code>Fork</code> button on the purrr repo. Notice that GitHub will transfer you to your own account where a copy of the purrr repository will be created. It will appear as follows:</p></li>
+</ul>
+<br>
+<center>
+<img src="forked.png" width=400 />
+</center>
+<p><br></p>
+<ul>
+<li>The difference between forking and cloning should be clear now. Cloning is making a copy of a repo on your local computer, whereas forking is doing the same thing on GitHub.</li>
+</ul>
+<p><Br><br></p>
+<h2 id="contributing-as-a-non-collaborator">2. Contributing as a non-collaborator</h2>
+<ul>
+<li>Our workflow for Github collaboration begins here. You will still need two github accounts like last time, but we will work them a bit differently now.</li>
+</ul>
+<p><br></p>
+<h3 id="penguin-creates-a-new-repo">2.1 <code>penguin</code> creates a new repo</h3>
+<ul>
+<li><p>First, using your original account, create a new repo, and name it <code>mkhist</code>. Keep it <strong>public</strong>.</p></li>
+<li><p>Unlike last week, you will not create any collaborators on this repo.</p></li>
+</ul>
+<p><br></p>
+<h3 id="penguin-creates-a-r-package">2.2 <code>penguin</code> creates a R package</h3>
+<ul>
+<li>On your local computer, create a new folder named after the repo and generate a new <code>README.md</code>.</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="bu">cd</span> ~/Github <span class="kw">&amp;&amp;</span> <span class="fu">mkdir</span> mkhist <span class="kw">&amp;&amp;</span> <span class="bu">cd</span> mkhist</span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">git</span> init</span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="fu">touch</span> README.md</span></code></pre></div>
+<ul>
+<li>Write an R function to generate histograms from each variable of the dataframe</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">library</span>(tidyverse)</span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a>mkhist &lt;-<span class="st"> </span><span class="cf">function</span>(x){</span>
+<span id="cb2-4"><a href="#cb2-4"></a>    <span class="kw">print</span>(x <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">head</span>())</span>
+<span id="cb2-5"><a href="#cb2-5"></a>    x <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">gather</span>() <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">head</span>()</span>
+<span id="cb2-6"><a href="#cb2-6"></a></span>
+<span id="cb2-7"><a href="#cb2-7"></a>    <span class="kw">ggplot</span>(<span class="kw">gather</span>(x), <span class="kw">aes</span>(value)) <span class="op">+</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a><span class="st">        </span><span class="kw">geom_histogram</span>(<span class="dt">bins=</span><span class="dv">20</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="st">        </span><span class="kw">facet_wrap</span>(<span class="op">~</span>key, <span class="dt">scales=</span><span class="st">&#39;free_x&#39;</span>)</span>
+<span id="cb2-10"><a href="#cb2-10"></a>}</span>
+<span id="cb2-11"><a href="#cb2-11"></a></span></code></pre></div>
+<p><br></p>
+<h3 id="penguin-pushes-the-package-to-github">2.3 <code>penguin</code> pushes the package to github</h3>
+<p><br></p>
+<h3 id="puffin-installs-the-package">2.4 <code>puffin</code> installs the package</h3>
+<p><br></p>
+<h3 id="puffin-forks-the-package-repository">2.5 <code>puffin</code> forks the package repository</h3>
+<p><br></p>
+<h3 id="puffin-sets-up-repo-for-contribution">2.6 <code>puffin</code> sets up repo for contribution</h3>
+<h3 id="puffin-adds-more-functionality-to-the-package">2.7 <code>puffin</code> adds more functionality to the package</h3>
+<p><br></p>
+<h3 id="puffin-pushes-updates-to-the-fork">2.8 <code>puffin</code> pushes updates to the fork</h3>
+<p><br></p>
+<h3 id="puffin-creates-a-pull-request">2.9 <code>puffin</code> creates a pull request</h3>
+<p><br></p>
+<h3 id="penguin-examines-and-resolves-the-pull-request">2.10 <code>penguin</code> examines and resolves the pull request</h3>
+</body>
+</html>

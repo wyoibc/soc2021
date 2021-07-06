@@ -17,4 +17,6 @@ title: Welcome to Summer of Code 2021
 
 - [June 22: Your First R Package](week5/rpack.html)
 
-- [June 29: Contributing on GitHub with Branches and Forks](week6/branch-fork.html)
+- [June 29: Contributing on GitHub with Branches](week6/branch-fork.html)
+
+- [July 6: Contributing on GitHub with Forks](week7/forks.html)
