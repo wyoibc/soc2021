@@ -3,6 +3,8 @@ title: Welcome to Summer of Code 2021
 ---
 
 
+#### Website for this repository is hosted at [https://wyoibc.github.io/soc2021](https://wyoibc.github.io/soc2021)
+
 ## Table of contents
 
 - [Preparation](prep/index.html)
@@ -20,3 +22,5 @@ title: Welcome to Summer of Code 2021
 - [June 29: Contributing on GitHub with Branches](week6/branch-fork.html)
 
 - [July 6: Contributing on GitHub with Forks](week7/forks.html)
+
+- [July 13: Create & Maintain an Online Workbook](week8/notebooks.html)

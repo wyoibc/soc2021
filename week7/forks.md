@@ -2,6 +2,9 @@
 title: Contribute with Forks on Github
 ---
 
+
+## Note: This tutorial is incomplete. It will updated by Friday, July 16th.
+
 ### Video recording for this session
 
 <br>
