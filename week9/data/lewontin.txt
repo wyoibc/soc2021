@@ -1,0 +1,81 @@
+TITLE: A Molecular Approach to the Study of Genic Heterozygosity in Natural Populations. II. Amount of Variation and Degree of Heterozygosity in Natural Populations of Drosophila pseudoobscura
+
+AUTHORS: R.C. LEWONTIN and J.L. HUBBY
+
+AFFILIATION: Dept. of Zoology, University of Chicago, Chicago, Illinois
+
+
+
+
+INTRODUCTION:
+
+As pointed out int he first paper of this series (Hubby & Lewontin 1966), no one knows at the present time the kinds and frequencies of variant alleles present in natural populations of any organism, with the exception of certain special classes of geness.  For human populations we know a good deal about certain polymorphisms for blood cell antigens, serum proteins, and metabolic disorders of various kinds but we can hardly regard these, <italic> a priori </italic>, as typical of the genome as a whole.  Clearly we need a method that will randomly sample the genome and detect a major proportion of the individual allelic substitutions that are segregating in a population.  In our previous paper, we discussed a method for accomplishing this end by means of a study of electrophoretic variants at a large number of loci and we showed that the variation picked up by this method behaves in a simple Mendelian fashion so that phenotypes can be equated to homozygous and heterozygous genotypes at single loci.
+
+
+It is the purpose of this second paper to show the results of an application of the method to a series of samples chosen from natural populations of <italic> Drosophila pseudoobscura </italic>.  In particular, we will show that there is a considerable amount of genic variation segregating in all of the populations studied and that the real variation in these populations must be greater than we are able to demonstrate.  This study does not make clear what balance of forces is responsible for the genetic variation observed, but it does make clear the kind and amount of variation at the genic level that we need to explain.
+
+An exactly similar method has recently been applied by Harris (1966) for the enzymes of human blood.  In a preliminary report on ten randomly chosen enzymes, Harris describes two as definitely polymorphic genetically and a third as phenotypically polymorphic but with insufficient genetic data so far.  Clearly these methods are applicable to any organism of macroscopic dimensions.
+
+
+THE POPULATIONS STUDIED
+
+
+The populations in this study are represented by a number of separate lines each stemming from a single fertilized female caught in nature.  For example, nine separate single-female lines maintained separately in the laboratory since 1957 represent the population from Flagstaff, Arizona.  Because we were unable to get fresh samples (except for one case) we preferred these separate lines to any mixed population.  Such separate lines may each suffer homozygosis because of inbreeding, but the differences between lines will preserve some portion of the original population variance.  If the lines had been pooled and kept since 1957 as a mixture, more of the variability originally introduced would have been lost.  As our results will show, most, but not all, lines are in fact homozygous but differences between lines have been preserved.  Nevertheless, the loss of variation because of inbreeding needs to be kept in mind when we analyze results.
+
+The population samples in the study were as follows: (1) Flagstaff, Arizona. Nine lines connected in a ponderosa pine forest above 5,000 feet elevation in 1957. The natural population is virtually pure for the Arrowhead gene arrangement on the third chromosome and all lines are Arrowhead homozygotes (see Dobzhanskky and Epling 1944). (2) Mather, California. Seven lines collected between 1957 and 1960 in a Transition Zone forest at 4,600 feet elevation.  This population is highly polymorphic for third chromosome inversions in nature.  All strains used were homozygous Arrowhead (see Dobzhansky 1948). (3) Wildrose, California.  Ten strains collected in 1957 in the Panamint Range at 8,000 feet elevation in a pinon Juniper forest.  The population is highly polymorphic for inversions, but the strains tested were all homozygous Arrowhead (see Dobzhansky and Epling 1944). (4) Cimmarron, Colorado.  Six lines collected in a Quercus gambelii grove at about 7,000 feet elevation in 1960.  All lines are homozygous Arrowhead. (5) Strawberry Canyon (Berkeley), California.  Ten strains from a much larger collection made in 1965 at an elevation of 800 feet.  This population is highly polymorphic for third chromosome inversions, and the strains used were also polymorphic, being the F2 and F3 from the wild females.  (6) A single strain from Bogota, Colombia.  A much larger sample is planned for this extreme outlier of the species range, but the single strain collected in 1960 was included since it was available.  The population occurs between 8,000 and 10,000 feet elevation and has two inversions, Santa Cruz and Treeline in proportions 65:35 (see Dobzhansky et al 1963).
+
+
+
+RESULTS
+
+the methods of electrophoretic separation and detection of enzyme systems are fully explained by Hubby and Lewontin (1966) and we will take it as demonstrated in that paper that the phenotypes we see are reflective of simple allelic substitutions at single genetic loci.  Therefore, in what follows in this paper, we will refer to "alleles" and "loci" without again referring to the phenotypic appearance of the electrophoretic gels.
+
+
+5. Local Pure Races
+
+
+A class of variation that is completely lacking in our sample of loci is the local pure race.  In no case do we find some populations homozygous for one allele and other populations homozygous for a different one.  We expect such a pattern if the alleles were functionally equivalent isoalleles not under any natural selection pressure.  The failure to find such cases is important to our hypotheses about the forces responsible for the observed variation.
+
+To sum up these classes, out of 18 loci included in the population study, seven are clearly polymorphic in more than one population and two are represented by rare local variants in a single population which, to be conservative, are not considered polymorphic.  Thus, conservatively 39% of loci are polymorphic.  This takes account of all populations and does not give an estimate of polymorphism in any given population, which will be less.  Table 3 is a summary of the information for each population separately.  The populations are very similar to each other in their degree of polymorphism with an average of 30% of the loci varying in each.  It is interesting that Strawberry Canyon, a fresh sample from the wild, is not different from the others.  We can assume that most of the variation from nature has been preserved in the laboratory stocks but has been converted to variation between strains by the inbreeding attendant on laboratory culture.  Another point of interest is that the great similarity in proportion of loci polymorphic in each population is not entirely a result of identity of polymorphisms.  Thus, although Wildrose and Flagstaff are both polymorphic at five out of 18 loci, only three of these are common to both populations.  Flagstaff is polymorphic at two loci, <italic> mdh </italic> and pt-7, for which Wildrose is monomorphic, but Wildrose is polymorphic for ap-7 and pt-10, which Cimarron is monomorphic at these loci.  
+
+
+Yet another question that can be asked from the data is, "At what proportion
+of his loci will the average individual in a population be heterozygous?" In fact,
+this can be described without exaggeration as the central problem of experimental
+population genetics at the present time. A complete discussion of the conflicting
+results on this question is not possible here, but the issue is very clearly drawn
+by WALLACE (1958). The results reported by WALLACE in that paper, in previous
+papers (WALLACE 1956) and in subsequent works by WALLACE (1963), WALLACE
+and DOBZHANSKY ( 1962), DOBZHANSKY, KRIMBAS and KRIMBAS ( 1960) , and
+many others. all point, although indirectly, toward a high level of heterozygosity
+in natural populations. On the other hand, theoretical considerations by KIMURA
+and CROW (1964) and experiments of HIRAIZUMI and CROW (1960), GREENBERG and CROW (1960), MULLER and FALK (1961) and FALK (1961) among
+others, point in the opposite direction. These latter authors interpret their results
+as showing that the proportion of loci heterozygous in a typical individual from
+a population will be quite small and that polymorphic loci will represent a small
+minority of all genes. 
+
+
+
+
+SUMMARY
+
+
+Using genetic differences in electrophoretic mobility, demonstrated by HUBBY
+and LEWONTIN (1966) to be single Mendelian alternatives, we have surveyed
+the allelic variation in samples from five natural populations of D. pseudoobscura.
+Out of 18 loci randomly chosen, seven are shown to be clearly polymorphic in
+more than one population and two loci were found to have a rare local variant
+segregating. Thus, 39% of loci in the genome are polymorphic over the whole
+species. The average population is polymorphic for 30% of all loci. The estimates
+of gene frequency at these loci enable us to estimate the proportion of all loci in
+an individual’s genome that will be in heterozygous state. This value is between
+8% and 15% for different populations, with an average of 12%. A suggestion
+of a relationship has been observed between the extent of this heterogeneity and
+the amount of inversion polymorphism in a population.-An examination of the
+various biases in the experiment shows that they all conspire to make our estimate
+of polymorphism and heterozygosity lower than the true value. There is no
+simple explanation for the maintenance of such large amounts of genic heterozygosity. 
+
+
+
