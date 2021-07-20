@@ -24,3 +24,5 @@ title: Welcome to Summer of Code 2021
 - [July 6: Contributing on GitHub with Forks](week7/forks.html)
 
 - [July 13: Create & Maintain an Online Workbook](week8/notebooks.html)
+
+- [July 20: Typesetting with LaTeX]()
