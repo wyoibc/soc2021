@@ -25,4 +25,4 @@ title: Welcome to Summer of Code 2021
 
 - [July 13: Create & Maintain an Online Workbook](week8/notebooks.html)
 
-- [July 20: Typesetting with LaTeX]()
+- [July 20: Typesetting with LaTeX](week9/latex.html)
