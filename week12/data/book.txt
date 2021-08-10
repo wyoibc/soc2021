@@ -1,0 +1,84 @@
+AN INTRODUCTION TO POPULATION GENETICS THEORY
+
+MOTOO KIMURA AND JAMES F. CROW
+
+===================================================
+
+# Preface
+
+
+This book is intended primarily for graduate students and advanced undergraduates in genetics and population biology.  We hope that it will be of value and interest to others also.  It is an attempt to present the field of population genetics, starting with elementary concepts and leading the reader well into the field.  At first we intended to include experimental work; but this has been largely omitted, partly in the interest of coherence and partly because the book is already long.
+
+Population genetics has undergone enormous changes since this bookw as written. It has become broader, deeper, and more rigorous.  Computers have brought major advances.  Some parts of the book are in error or at least not as well done as they could have been; many more have been superseded. A proper revision would be an enormous task; so it is better, I think, to leave the book as it was originally than to undertake what, at best, would be a makeshift job.  I have, however, made a few minor corrections.
+
+=================================================
+
+# Introduction
+
+We are concerned in this book mainly with population genetics in a strict sense. We deal primarily with natural populations and less fully with the rather similar problems that arise in breeding livestock and cultivated plants. The latter subject, sometimes called quantitative or biometrical genetics, emphasizes economically important measurements where the breeding system is under human control. Although this is not neglected, we emphasize more the behavior of genes and population attributes under natural selection where the most important measure is Darwinian fitness.
+
+We continue the tradition of SEwall Wright and R.A. Fisher in using heuristic arguments that are not rigorously proven, especially in the use of continuous approximations and diffusion models.  This involves a risk of later being shown to be wrong, but the history of the physical sciences is on the side of such a strategy.  The view is well pexpressed by Richard Feynman in his Nobel Prize lecture (Science 153: 699, 1966):
+
+>> In the face of the lack of direct mathematical demonstration one must be careful and thorough to make sure of the point, and one should make a perpetual attempt to demonstrate as much of the formula as possible.  Nevertheless, a very great deal more truth can become known than can be proven.
+
+======================================================
+
+# 1. Models of Population Growth
+
+Theoretical population genetics is concerned with model building. Any model of nature is an oversimplification, as is any verbal description of a natural process. The model is an attempt to abstract from nature some significant aspect of the true situation.
+
+We introduce four deterministic models:
+
+1. Discrete, nonoverlapping generations,
+2. Continuous random births and deaths,
+3. Overlapping generations, discrete time intervals,
+4. Overlapping generations, continuous change.
+
+
+## 1.1 Model 1: Discrete, Nonoverlapping Generations
+
+This is in many ways the simplest description of population growth.  We assume that the parent generation reproduces and that, before the offspring reach reproductive age, the parents have all died (or at least are no longer counted). Time is measured most conveniently in units of generations.
+
+Let Nt be the number of individuals in the population at time t, measured in generations.  If the average number of progeny per individual is w, the population number in generation t can be expressed in terms of the number in the previous generation, t-1, by
+
+Nt = wNt-1            (1.1.1)
+
+
+
+==========================================================
+
+# 2. Randomly Mating Populations
+
+We are now ready to consider populations with Mendelian inheritance and begin by inquiring into the frequencies of the different genotypes that comprise the population.  In the last chapter we were interested in the total numberj of individuals in the population and in different subpopulations.  In genetic studies there is usually greater interest in the relative numbers of different genotypes, so it is convenient to express the numbers of different types as proportions of the total. As long as we use deterministic models the total number in the population is not important and we can deal as well with proportions.  With stochastic models the number in the population becomes important in determining the extent of random fluctuations and therefore must be taken into consideration.
+
+
+## 2.1 Gene Frequency and Genotype Frequency
+
+
+The number of possible genotypes in a population greatly exceeds the number of genes and soon becomes enormous.  A diploid population with only two alleles at each of 100 loci would have 3100 possible genotypes, a number far greater than the number of individuals in any population.  Therefore we effect a great simplification by writing formulae in terms of gene frequencies rather than genotype frequencies.  This usually entails some loss of information, for knowledge of the gene frequencies is not sufficient to specify genotype frequencies; but it is usually possible to do this to a satisfactory approximation by introducing other information, such as the mating system and linkage relations.
+
+From these genotype frequencies, we can write the frequencies of alleles A1 and A2, which are designated p1 and p2, as follows:
+
+p1 = N11 + N12 / N = P11 + P12
+
+p2 = N22 + N12 / N = P12 + P 22
+
+
+
+Table 2.1.1 Numbers of persons of blood types M, MN, and N in a sample from a British population.  Data from Race and Sanger (1962)
+
+Phenotype <- c("M", "MN", "N")
+
+Genotype <- c("MM", "MN", "NN")
+
+Number <- c(363, 634, 282)
+
+Frequency <- c(0.284, 0.496, 0.220)
+
+
+
+
+p1 or PM = 0.284 + 1/2(0.496) = 0.532
+p2 or PN = 0.220 + 1/2(0.496) = 0.468
+
+

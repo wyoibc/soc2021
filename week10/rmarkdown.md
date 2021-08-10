@@ -7,8 +7,7 @@ title: Notebooks with RMarkdown
 
 <br>
 <center>
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lJnATIEdV-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 <br><br>
 
@@ -81,7 +80,7 @@ tinytex::install_tinytex()
 
 <br><br>
 
-## Data for today's exercise
+## 2. Data for today's exercise
 
 This exercise uses a population genomic data set from study of two hybridizing *Populus* species. One of the goals of this study was to uncover signatures of natural selection (*sensu* Darwin) in hybrid individuals. In order to do this, a genetic differentiation index called ``Fst`` is calculated between populations for two sets of genetic loci: those that have been determined to be under the effect of natural selection and those that are presumed neutral (i.e. no selection). We will be making a couple of figures from this data.
 
@@ -93,6 +92,11 @@ This exercise uses a population genomic data set from study of two hybridizing *
 
 
 <br><br>
+
+
+
+
+
 
 ## 3. Further Reading 
 
